@@ -11,9 +11,5 @@ Therefore, the target variable is the release year, and the features are the 12 
 We tried the combination of 6 different models, and 4 different data sets (10 features and not downsampled, 20 features and not downsampled, 10 features and downsampled, 20 features and downsampled).
 We found that the model with the best Root Mean Squared Error is the ExtraTreesRegressor, with the sets of 20 features, and the training set not downsampled. But to have a model small enough to load in a reasonnable time, and not to many features for the user to enter in the API, we decided to keep the best model with data sets of 10 features. It was the ExtraTreesRegressor, with the sets of 10 features, and the training set not downsampled. Unfortunately we got a memory error, so we kept the second best model with data sets of 10 features, which was the GradientBoostingRegressor, with the sets of 10 features, and the training set not downsampled. It has a RMSE of 9,38.
 
-The API done with flask gives the following :
-
-
-
 
 For further explanation, see the pdf of the PowerPoint that is in this repository.
